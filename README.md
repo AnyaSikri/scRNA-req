@@ -1,15 +1,11 @@
-#Single Cell RNA-seq Analysis
+Autoencoder and Classification Pipeline for scRNA‑seq Data
 
-## Project Overview
-Analysis of single-cell RNA sequencing data from peripheral blood mononuclear cells (PBMCs). PBMCs are white blood cells that include T cells, B cells, natural killer cells, and other immune system components. These cells change gene expression patterns during infection or vaccination, making them valuable for medical research.
+Overview
 
-## Data
-Pre-processed scRNA-seq count matrix with cell type labels from original researchers. Data is already normalized and cleaned.
+This project implements a two‑stage computational biology pipeline to analyze single‑cell RNA sequencing (scRNA‑seq) data:
 
-## Part 1: Dimensionality Reduction
-Compare three methods for visualizing high-dimensional gene expression data:
-- Autoencoder (implement neural network for latent space representation)
-- t-SNE 
-- PCA
-## Part 2: Cell Type Classification
-Build classifier to predict cell types for unlabeled cells. Methods discussed in lab include random forests and ensemble approaches.
+Part 1: Autoencoder Embeddings – Train and evaluate a deep autoencoder to learn a low‑dimensional representation of normalized PBMC scRNA‑seq counts.
+
+Part 2: Classification – Use the learned embeddings to train a classifier (e.g., random forest) for cell‑type prediction and assess performance.
+
+The goal is to compare nonlinear autoencoder embeddings against traditional methods (PCA, t‑SNE) for clustering quality and to demonstrate how these embeddings can improve downstream classification accuracy.
