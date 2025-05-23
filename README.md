@@ -1,4 +1,4 @@
-Autoencoder and Classification Pipeline for scRNA‑seq Data
+## Autoencoder and Classification Pipeline for scRNA‑seq Data
 
 Overview
 
